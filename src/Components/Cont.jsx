@@ -86,7 +86,7 @@ const Cont = () => {
           </div>
           </div>
           <div class="pt-16">
-          <div class="mt-5 flex flex-row justify-center">
+          <div class="mt-10 flex flex-row justify-center md:mt-3">
             <div class="flex flex-row">
             <SocialIcon
                 url="https://www.linkedin.com/in/victor-paul-choudhury/"
