@@ -93,7 +93,7 @@ const Cont = () => {
                 fgColor="white"
                 bgColor="transparent"
               />
-                <h2 class="text-slate-200 text-xs mt-5">Linkedin</h2>
+                <h2 class="text-slate-200 text-xs mt-5"><a href="https://www.linkedin.com/in/victor-paul-choudhury/">Linkedin</a></h2>
             </div>
           </div>
 
@@ -104,7 +104,7 @@ const Cont = () => {
                 fgColor="white"
                 bgColor="transparent"
               />
-                <h2 class="text-slate-200 text-xs mt-5">Github</h2>
+                <h2 class="text-slate-200 text-xs mt-5"><a href="https://github.com/VIC-PAUL">Github</a></h2>
             </div>
           </div>
 
@@ -115,7 +115,7 @@ const Cont = () => {
                 fgColor="white"
                 bgColor="transparent"  
               />
-              <h2 class="text-slate-200 text-xs mt-5">Twitter</h2>
+              <h2 class="text-slate-200 text-xs mt-5"><a href="https://twitter.com/victor__paul">Twitter</a></h2>
             </div>
           </div>
 
@@ -126,7 +126,7 @@ const Cont = () => {
                 fgColor="white"
                 bgColor="transparent"  
               />
-              <h2 class="text-slate-200 text-xs mt-5">Mail</h2>
+              <h2 class="text-slate-200 text-xs mt-5"><a href="mailto:https://vicpaul1994@gmail.com">Mail</a></h2>
             </div>
           </div>
 
