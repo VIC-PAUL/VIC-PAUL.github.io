@@ -17,7 +17,7 @@ const Navbar = () => {
     },
     {
       id: 3,
-      link: "portfolio",
+      link: "skills",
     },
     {
       id: 4,
@@ -27,7 +27,7 @@ const Navbar = () => {
     },
     {
       id: 5,
-      link: "skills",
+      link: "portfolio",
     },
     {
       id: 6,
