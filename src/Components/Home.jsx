@@ -3,6 +3,9 @@ import heroImage from "../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Home = () => {
+  const newtab=()=>{
+    window.open("/Victor-Choudhury-Resume.pdf")
+  }
   return (
     <div name="home" className="h-screen w-full bg-white pt-40">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center h-full px-8  md:pt-9 md:flex-row pb-6">
@@ -25,7 +28,7 @@ const Home = () => {
 
           <div>
             <a href="/Victor-Choudhury-Resume.pdf" download={true}>
-              <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-black cursor-pointer">
+              <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-black cursor-pointer" onClick={()=>newtab()}>
                 RESUME
                 <span className=" group-hover:rotate-90 duration-300">
                   <MdOutlineKeyboardArrowRight size={25} className="ml-1" />

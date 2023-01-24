@@ -7,7 +7,13 @@ import reactImage from "../assets/react.png";
 import nextjs from "../assets/nextjs.png";
 import tailwind from "../assets/tailwind.png";
 import git from "../assets/git.jpg";
+import redux from "../assets/redux.png"
 import chakra from "../assets/chakra.png";
+import typescript from "../assets/typescript.png";
+import express from "../assets/express.png";
+import mongo from "../assets/mongo.png";
+import mongoose from "../assets/mongoose.png";
+import story from "../assets/story.png";
 
 const Skills = () => {
   const skill = [
@@ -31,15 +37,15 @@ const Skills = () => {
     },
     {
       id: 4,
-      src: reactImage,
-      title: "React",
-      style: "shadow-blue-600",
+      src: typescript,
+      title: "TypeScript",
+      style: "shadow-blue-500",
     },
     {
       id: 5,
-      src: tailwind,
-      title: "Tailwind",
-      style: "shadow-sky-400",
+      src: reactImage,
+      title: "React",
+      style: "shadow-cyan-600",
     },
     {
       id: 6,
@@ -47,18 +53,61 @@ const Skills = () => {
       title: "Next JS",
       style: "shadow-black",
     },
-  
+   
     {
       id: 7,
+      src: redux,
+      title: "Redux",
+      style: "shadow-violet-500",
+    },
+    {
+      id: 8,
+      src: node,
+      title: "Node",
+      style: "shadow-green-600",
+    },
+    {
+      id: 9,
+      src: express,
+      title: "Express",
+      style: "shadow-gray-600",
+    },
+    {
+      id: 10,
+      src: mongo,
+      title: "Mongo",
+      style: "shadow-green-600",
+    },
+    {
+      id: 11,
+      src: mongoose,
+      title: "Mongoose",
+      style: "shadow-red-900",
+    },
+    {
+      id: 12,
+      src: tailwind,
+      title: "Tailwind",
+      style: "shadow-sky-400",
+    },
+  
+    {
+      id: 13,
+      src: chakra,
+      title: "Chakra-UI",
+      style: "shadow-teal-300",
+    },
+    {
+      id: 14,
       src: git,
       title: "GitHub",
       style: "shadow-black",
     },
     {
-      id: 8,
-      src: chakra,
-      title: "Chakra-UI",
-      style: "shadow-teal-300",
+      id: 15,
+      src: story,
+      title: "Storybook",
+      style: "shadow-pink-600",
     },
   ];
 
@@ -81,7 +130,7 @@ const Skills = () => {
             {
                 skill.map(({id,src,title,style})=>(
                     <div key={id} className={`shadow-md hover:scale-105 duration-80 py-2 rounded-xl ${style}`}>
-            <img src={src} alt="" className="w-20 mx-auto" />
+            <img src={src} alt="" className="w-20 mx-auto h-20"/>
             <p className="mt-4">{title}</p>
           </div>
                 ))

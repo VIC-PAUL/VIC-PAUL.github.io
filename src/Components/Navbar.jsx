@@ -4,6 +4,10 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const newtab=()=>{
+    window.open("/Victor-Choudhury-Resume.pdf")
+  }
+
   const [icon, setIcon] = useState(false);
 
   const links = [
@@ -21,19 +25,14 @@ const Navbar = () => {
     },
     {
       id: 4,
-      link: "resume",
-      href: "/Victor-Choudhury-Resume.pdf",
-      download: true,
-    },
-    {
-      id: 5,
       link: "portfolio",
     },
     {
-      id: 6,
+      id: 5,
       link: "contact",
     },
   ];
+
   return (
     <div className="flex justify-between items-center w-full h-20 text-white bg-black fixed px-4">
       <div>
@@ -44,19 +43,21 @@ const Navbar = () => {
         {links.map(({ id, link, href, download }) => (
           <li
             key={id}
-            className="cursor-pointer px-4 text-gray-500 hover:scale-105 duration-50"
+            className="cursor-pointer px-1 text-gray-500 hover:scale-105 duration-50"
           >
-            <a href={href} download={download}>
-            <button className="cursor-pointer px-2 text-black hover:scale-105 duration-50 bg-white text-xl font-black uppercase items-center rounded-md">
+            <button className="cursor-pointer px-3 text-black hover:scale-105 duration-50  bg-white text-xl font-black uppercase items-center rounded-md">
               <Link to={link} smooth duration={300}>
                   {link}
               </Link>
             </button>
-            </a>
           </li>
-        ))}
-      </ul>
 
+        ))}
+         <a href="/Victor-Choudhury-Resume.pdf" download={true}>
+        <button onClick={()=>newtab()} className="cursor-pointer px-2 ml-1 text-black hover:scale-105 duration-50  bg-white text-xl font-black uppercase items-center rounded-md">RESUME</button>      
+        </a>
+        </ul>
+       
       <div
         onClick={() => setIcon(!icon)}
         className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
@@ -81,6 +82,9 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+            <a href="/Victor-Choudhury-Resume.pdf" download={true}>
+        <button onClick={()=>newtab()} className="px-4 cursor-pointer capitalize py-6 text-4xl">Resume</button>      
+        </a>
         </ul>
       )}
     </div>
