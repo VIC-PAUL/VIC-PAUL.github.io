@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Home = () => {
   const newtab=()=>{
-    window.open("/Victor-Choudhury-Resume.pdf")
+    window.open("https://drive.google.com/file/d/1AkWZgn9qHNiM0AtNEwC3wAwacD1sy5jA/view?usp=sharing")
   }
   return (
     <div name="home" className="h-screen w-full bg-white pt-40">

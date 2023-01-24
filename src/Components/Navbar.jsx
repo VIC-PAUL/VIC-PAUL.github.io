@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const newtab=()=>{
-    window.open("/Victor-Choudhury-Resume.pdf")
+    window.open("https://drive.google.com/file/d/1AkWZgn9qHNiM0AtNEwC3wAwacD1sy5jA/view?usp=sharing")
   }
 
   const [icon, setIcon] = useState(false);
