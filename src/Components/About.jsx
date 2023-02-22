@@ -14,13 +14,13 @@ const About = () => {
           <p className=" text-4xl font-bold pt-20">About</p>
         </div>
         <p className="text-2xl mt-5 pb-40">
-          I am a M.E.R.N Stack Developer along with theoratical knowledge about
+        I am a M.E.R.N Stack Developer along with theoretical knowledge about
           storybook.<br/>
-          I am skilled in HTML, CSS, JavaScript along with MERN
-          stack, which I have used in creating various projects. I also possess
-          the knowledge about Data Structure & algorithm. I am keen to start my
-          career as a Full Stack Developer in a company that promotes the
-          personal and professional growth of its employees while giving them
+          I am skilled in HTML, CSS, and JavaScript along with the MERN
+          stack and I have used these tech stacks for creating various projects. I also possess
+          knowledge about data structures & algorithms. I am looking forward to starting my
+          career as a Full Stack Web Developer in a company that promotes both
+          the personal and professional growth of its employees while giving them
           the opportunities to use their skills and knowledge.
         </p>
       </div>

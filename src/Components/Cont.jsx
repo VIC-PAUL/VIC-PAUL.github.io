@@ -1,13 +1,27 @@
 import React from "react";
-import { SocialIcon } from 'react-social-icons'
+import { SocialIcon } from "react-social-icons";
 
 const Cont = () => {
+  const newtab = () => {
+    window.open("https://www.linkedin.com/in/victor-paul-choudhury/");
+  };
+  const newtab1 = () => {
+    window.open("https://github.com/VIC-PAUL");
+  };
+  const newtab2 = () => {
+    window.open("https://twitter.com/victor__paul");
+  };
+  const newtab3 = () => {
+    window.open("https://vicpaul1994@gmail.com");
+  };
   return (
     <div class="h-full w-full bg-white-100 justify-center">
       <div class="bg-white rounded-xl shadow-md flex flex-row justify-center bg-gradient-to-r from-blue-500 to-cyan-500 pr-8 md:hover:scale-y-110 duration-100">
         <div class=" p-8  transition md:block max-w-screen-lg ">
           <div class="flex justify-between ">
-            <h2 class="text-white text-xl justify-center">Contact Information</h2>
+            <h2 class="text-white text-xl justify-center">
+              Contact Information
+            </h2>
           </div>
           <div class="mt-6 flex flex-row ">
             <div>
@@ -84,52 +98,68 @@ const Cont = () => {
               <p class="text-white text-xs">Guwahati</p>
             </div>
           </div>
-          </div>
-          <div class="pt-16">
+        </div>
+        <div class="pt-16">
           <div class="mt-5 flex flex-row justify-center md:mt-3">
             <div class="flex flex-row">
-            <SocialIcon
+              <SocialIcon
                 url="https://www.linkedin.com/in/victor-paul-choudhury/"
                 fgColor="white"
                 bgColor="transparent"
               />
-                <h2 class="text-slate-200 text-xs mt-5"><a href="https://www.linkedin.com/in/victor-paul-choudhury/">Linkedin</a></h2>
+              <h2
+                class="text-slate-200 text-xs mt-5 cursor-pointer"
+                onClick={() => newtab()}
+              >
+                Linkedin
+              </h2>
             </div>
           </div>
 
           <div class="mt-0 flex flex-row">
             <div class="flex flex-row">
-            <SocialIcon
+              <SocialIcon
                 url="https://github.com/VIC-PAUL"
                 fgColor="white"
                 bgColor="transparent"
               />
-                <h2 class="text-slate-200 text-xs mt-5"><a href="https://github.com/VIC-PAUL">Github</a></h2>
+              <h2
+                class="text-slate-200 text-xs mt-5 cursor-pointer"
+                onClick={() => newtab1()}
+              >
+                Github
+              </h2>
             </div>
           </div>
 
           <div class="mt-0 flex flex-row">
             <div class="flex flex-row">
-            <SocialIcon
+              <SocialIcon
                 url="https://twitter.com/victor__paul"
                 fgColor="white"
-                bgColor="transparent"  
+                bgColor="transparent"
               />
-              <h2 class="text-slate-200 text-xs mt-5"><a href="https://twitter.com/victor__paul">Twitter</a></h2>
+              <h2
+                class="text-slate-200 text-xs mt-5 cursor-pointer"
+                onClick={() => newtab2()}
+              >
+                Twitter
+              </h2>
             </div>
           </div>
 
           <div class="mt-0 flex flex-row">
             <div class="flex flex-row">
-            <SocialIcon
+              <SocialIcon
                 url="https://vicpaul1994@gmail.com"
                 fgColor="white"
-                bgColor="transparent"  
+                bgColor="transparent"
               />
-              <h2 class="text-slate-200 text-xs mt-5"><a href="mailto:https://vicpaul1994@gmail.com">Mail</a></h2>
+              <h2 class="text-slate-200 text-xs mt-5 cursor-pointer"  onClick={() => newtab3()}>
+               Mail
+              </h2>
             </div>
           </div>
-
         </div>
       </div>
     </div>
