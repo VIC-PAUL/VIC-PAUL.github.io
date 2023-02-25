@@ -27,7 +27,7 @@ const Home = () => {
           </p>
 
           <div>
-            <a href="/Victor-Choudhury-Resume.pdf" download={true}>
+            <a href="/fw20_0705-Victor-Choudhury-Resume.pdf" download={true}>
               <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-black cursor-pointer" onClick={()=>newtab()}>
                 RESUME
                 <span className=" group-hover:rotate-90 duration-300">

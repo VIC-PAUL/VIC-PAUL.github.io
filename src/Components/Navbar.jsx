@@ -53,7 +53,7 @@ const Navbar = () => {
           </li>
 
         ))}
-         <a href="/Victor-Choudhury-Resume.pdf" download={true}>
+         <a href="/fw20_0705-Victor-Choudhury-Resume.pdf" download={true}>
         <button onClick={()=>newtab()} className="cursor-pointer px-2 ml-1 text-black hover:scale-105 duration-50  bg-white text-xl font-black uppercase items-center rounded-md">RESUME</button>      
         </a>
         </ul>
@@ -82,7 +82,7 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-            <a href="/Victor-Choudhury-Resume.pdf" download={true}>
+            <a href="/fw20_0705-Victor-Choudhury-Resume.pdf" download={true}>
         <button onClick={()=>newtab()} className="px-4 cursor-pointer capitalize py-6 text-4xl">Resume</button>      
         </a>
         </ul>
