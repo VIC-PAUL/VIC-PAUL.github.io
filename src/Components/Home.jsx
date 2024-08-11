@@ -3,14 +3,19 @@ import heroImage from "../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Home = () => {
-  const newtab=()=>{
-    window.open("https://drive.google.com/file/d/1AkWZgn9qHNiM0AtNEwC3wAwacD1sy5jA/view?usp=sharing")
-  }
+  const newtab = () => {
+    window.open(
+      "https://drive.google.com/file/d/1OIUgK54ktoCixsowBlARgAhK2TmyYT0m/view?usp=sharing"
+    );
+  };
   return (
-    <div name="home" className="h-screen w-full bg-white pt-40">
+    <div id="home" name="home" className="h-screen w-full bg-white pt-40">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center h-full px-8  md:pt-9 md:flex-row pb-6">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-black">
+          <h2
+            id="user-detail-name"
+            className="text-4xl sm:text-7xl font-bold text-black"
+          >
             VICTOR PAUL
           </h2>
           <h2 className="text-4xl sm:text-7xl font-bold text-black">
@@ -27,8 +32,12 @@ const Home = () => {
           </p>
 
           <div>
-            <a href="/fw20_0705-Victor-Choudhury-Resume.pdf" download={true}>
-              <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-black cursor-pointer" onClick={()=>newtab()}>
+            <a href="/Victor-Choudhury--Resume.pdf" download={true}>
+              <button
+                id="resume-button-2"
+                onClick={() => newtab()}
+                className="text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-black cursor-pointer"
+              >
                 RESUME
                 <span className=" group-hover:rotate-90 duration-300">
                   <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
@@ -40,6 +49,7 @@ const Home = () => {
 
         <div className="mb-80">
           <img
+            class="home-img"
             src={heroImage}
             alt="img"
             className="rounded-2xl w-full mx-auto mt-20  md:w-2/3 md:mt-60"

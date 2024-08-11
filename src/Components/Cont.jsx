@@ -15,7 +15,7 @@ const Cont = () => {
     window.open("https://vicpaul1994@gmail.com");
   };
   return (
-    <div class="h-full w-full bg-white-100 justify-center">
+    <div id="contact" class="h-full w-full bg-white-100 justify-center">
       <div class="bg-white rounded-xl shadow-md flex flex-row justify-center bg-gradient-to-r from-blue-500 to-cyan-500 pr-8 md:hover:scale-y-110 duration-100">
         <div class=" p-8  transition md:block max-w-screen-lg ">
           <div class="flex justify-between ">
@@ -59,7 +59,7 @@ const Cont = () => {
                 />
               </svg>
             </div>
-            <div>
+            <div id="contact-email">
               <h2 class="text-slate-200 text-xs">Email :</h2>
               <p class="text-white text-xs">vicpaul1994@gmail.com</p>
             </div>
@@ -76,7 +76,7 @@ const Cont = () => {
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
             </div>
-            <div>
+            <div id="contact-phone">
               <h2 class="text-slate-200 text-xs">Phone :</h2>
               <p class="text-white text-xs">+91-8638895425</p>
             </div>
@@ -100,7 +100,7 @@ const Cont = () => {
           </div>
         </div>
         <div class="pt-16">
-          <div class="mt-5 flex flex-row justify-center md:mt-3">
+          <div id="contact-linkedin" class="mt-5 flex flex-row justify-center md:mt-3">
             <div class="flex flex-row">
               <SocialIcon
                 url="https://www.linkedin.com/in/victor-paul-choudhury/"
@@ -116,7 +116,7 @@ const Cont = () => {
             </div>
           </div>
 
-          <div class="mt-0 flex flex-row">
+          <div id="contact-github" class="mt-0 flex flex-row">
             <div class="flex flex-row">
               <SocialIcon
                 url="https://github.com/VIC-PAUL"
@@ -155,8 +155,11 @@ const Cont = () => {
                 fgColor="white"
                 bgColor="transparent"
               />
-              <h2 class="text-slate-200 text-xs mt-5 cursor-pointer"  onClick={() => newtab3()}>
-               Mail
+              <h2
+                class="text-slate-200 text-xs mt-5 cursor-pointer"
+                onClick={() => newtab3()}
+              >
+                Mail
               </h2>
             </div>
           </div>

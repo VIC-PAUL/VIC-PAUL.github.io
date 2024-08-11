@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const newtab=()=>{
-    window.open("https://drive.google.com/file/d/1AkWZgn9qHNiM0AtNEwC3wAwacD1sy5jA/view?usp=sharing")
+    window.open("https://drive.google.com/file/d/1OIUgK54ktoCixsowBlARgAhK2TmyYT0m/view?usp=sharing")
   }
 
   const [icon, setIcon] = useState(false);
@@ -14,27 +14,32 @@ const Navbar = () => {
     {
       id: 1,
       link: "home",
+      class:"nav-link home",
     },
     {
       id: 2,
       link: "about",
+      class:"nav-link about",
     },
     {
       id: 3,
       link: "skills",
+      class:"nav-link skills",
     },
     {
       id: 4,
       link: "projects",
+      class:"nav-link projects",
     },
     {
       id: 5,
       link: "contact",
+      class:"nav-link contact",
     },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 text-white bg-black fixed px-4 z-40">
+    <div id="nav-menu" className="flex justify-between items-center w-full h-20 text-white bg-black fixed px-4 z-40">
       <div>
         <h1 className="text-3xl font-signature ml-2">vpc.</h1>
       </div>
@@ -53,8 +58,8 @@ const Navbar = () => {
           </li>
 
         ))}
-         <a href="/fw20_0705-Victor-Choudhury-Resume.pdf" download={true}>
-        <button onClick={()=>newtab()} className="cursor-pointer px-2 ml-1 text-black hover:scale-105 duration-50  bg-white text-xl font-black uppercase items-center rounded-md">RESUME</button>      
+         <a class="nav-link resume" href="/fw20_0705-Victor-Choudhury-Resume.pdf" download={true}>
+        <button id="resume-button-1" onClick={()=>newtab()} className="cursor-pointer px-2 ml-1 text-black hover:scale-105 duration-50  bg-white text-xl font-black uppercase items-center rounded-md">RESUME</button>      
         </a>
         </ul>
        
@@ -82,8 +87,8 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-            <a href="/fw20_0705-Victor-Choudhury-Resume.pdf" download={true}>
-        <button onClick={()=>newtab()} className="px-4 cursor-pointer capitalize py-6 text-4xl">Resume</button>      
+            <a class="nav-link resume" href="/fw20_0705-Victor-Choudhury-Resume.pdf" download={true}>
+        <button id="resume-button-1" onClick={()=>newtab()} className="px-4 cursor-pointer capitalize py-6 text-4xl">Resume</button>      
         </a>
         </ul>
       )}
